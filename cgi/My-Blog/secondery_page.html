@@ -1,0 +1,31 @@
+
+
+
+<tr> 
+[% FOREACH i = info %]   
+  
+    <td style="alignment-adjust:central" >
+      [% IF i.S_TOPIC %]  
+      <div class="btn-group">
+          <a class="btn dropdown-toggle btn-[% i.S_CLASS %] btn-small" data-toggle="dropdown" href="#">
+         &nbsp&nbsp    [% i.S_TOPIC %] &nbsp&nbsp&nbsp
+             <span class="caret"></span>
+          </a>
+          [% IF i.IS_SUBSCRIBED %]  
+            <img id="ok_[% i.M_PID %]_[% i.S_PID %]" hight="10px" width="10px" src="/static/images/My-Blog/pr.jpg" />
+          [% END %]  
+          <ul class="dropdown-menu">
+            <li> <a href="#" onclick="javascript:make_view('[% i.M_PID %]', '[% i.S_PID %]');return false;">View</a> </li>
+            <li> <a href="#" onclick="javascript:subscribe('[% i.M_PID %]', '[% i.S_PID %]');return false;">Subscribe</a> </li>
+            <li> <a href="#" onclick="javascript:unsubscribe('[% i.M_PID %]', '[% i.S_PID %]');return false;">Un-Subscribe</a> </li>
+            <li> <a href="#" onclick="javascript:make_quesation('[% i.M_PID %]', '[% i.S_PID %]');return false;">Your Quesation</a> </li>
+          </ul>
+    </div>  <br><br>   
+          
+      
+      
+      [% END %] 
+    </td>
+[% END %]  
+</tr>  
+    

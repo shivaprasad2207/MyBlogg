@@ -1,0 +1,25 @@
+.body{
+    margin-left:20%;
+    margin-right:20%;
+}
+
+
+.slideHeader
+{
+  height:     20px;
+  background: Blue;
+  color:      White;
+}
+
+.slideBody
+{
+  background: Gray;
+  padding:    5px;
+}
+
+.slidePanel
+{
+  width:      100px;
+  float:      left;
+  margin:     5px;
+}

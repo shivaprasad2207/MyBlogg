@@ -1,0 +1,19 @@
+
+
+
+<tr> 
+[% FOREACH i = info %]   
+  
+    <td style="alignment-adjust:central" >
+      [% IF i.M_TOPIC %]  
+       <input
+             type="button"
+             class="btn btn-small btn-[% i.M_CLASS %]"
+             value="[% i.M_TOPIC %]"
+             onclick = "javascript:dispatch('[% i.M_PID %]');return false;"
+        /> 
+      [% END %] 
+    </td>
+[% END %]  
+</tr>  
+    
